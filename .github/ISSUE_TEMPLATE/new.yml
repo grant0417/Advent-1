@@ -1,0 +1,33 @@
+name: Add repository
+description: Add a new repository to the leaderboard
+title: "Add <repo_name> "
+labels: ["repo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Let's add your repository to the leaderboard! Please fill out the following information:
+  - type: input
+    id: repository_url
+    attributes:
+      label: Repository URL
+      description: The url of the repository you want to add. Only public github repositories are supported at this time. You can only add your own repository.
+      placeholder: https://github.com/<user>/<repo>
+    validations:
+      required: true
+  - type: input
+    id: crate
+    attributes:
+      label: Crate name
+      description: If your repository is a workspace, please specify the crate you want to add. If your repository is not a workspace, please leave this blank.
+      placeholder: "my_aoc_2024_crate"
+    validations:
+      required: false
+  - type: input
+    id: toolchain
+    attributes:
+      label: Toolchain version
+      description: Which rust toolchain are you using? Will default to `stable`. This should comply with the [rust-toolchain](https://rust-lang.github.io/rustup/concepts/toolchains.html) format.
+      placeholder: "stable"
+    validations:
+      required: false

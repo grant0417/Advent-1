@@ -1,0 +1,38 @@
+name: Add repository
+on:
+  issues:
+    types:
+      - labeled
+concurrency:
+  group: "repo-data"
+
+permissions:
+  issues: write
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.label.name == 'repo' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: "manager/uv.lock"
+      - uses: actions/setup-python@v5
+        id: setup-python
+        with:
+          python-version: 3.13
+
+      - working-directory: manager
+        run: uv sync
+
+      - name: Handle the new repository
+        working-directory: manager
+        run: uv run python src/manager/handlers/add_repo.py ${{ github.event.issue.number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
