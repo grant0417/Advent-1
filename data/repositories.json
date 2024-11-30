@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "owner": "art049",
+    "name": "AoC24",
+    "crate": null,
+    "toolchain": "nightly"
+  }
+]
