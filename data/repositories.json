@@ -16,5 +16,11 @@
     "name": "aoc-2024-public",
     "crate": null,
     "toolchain": "nightly"
+  },
+  {
+    "owner": "max397574",
+    "name": "advent-of-code",
+    "crate": null,
+    "toolchain": "nightly"
   }
 ]
