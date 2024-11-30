@@ -22,5 +22,11 @@
     "name": "advent-of-code",
     "crate": null,
     "toolchain": "nightly"
+  },
+  {
+    "owner": "ravenlocke",
+    "name": "aoc-2024",
+    "crate": null,
+    "toolchain": "stable"
   }
 ]
