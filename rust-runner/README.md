@@ -11,7 +11,7 @@
      ```
    - If you specified a sub crate when you registered your solution, run:
      ```
-     cargo add --git <YOUR_REPO_URL> --package <YOUR_CRATE_NAME> --rename solution
+     cargo add --git <YOUR_REPO_URL> <YOUR_CRATE_NAME> --rename solution
      ```
 1. If you specified a toolchain while registering your solution, set it in the
    `rust-toolchain.toml` file:
