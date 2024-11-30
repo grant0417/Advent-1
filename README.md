@@ -32,6 +32,10 @@ We follow the standard defined in [`cargo-aoc`](https://github.com/gobanos/cargo
 
 Add your repository [here](https://github.com/CodSpeedHQ/Advent/issues/new?assignees=&labels=repo%2Cadd&projects=&template=new.yml&title=Add+%3Crepo_name%3E+).
 
+## Testing your Rust solution
+
+You can visit the [rust-runner](./rust-runner/) folder to test your Rust solution locally and make sure it will be picked up by the runner if you registered your repository.
+
 ## Support
 
 Join us on [Discord](https://discord.gg/p4jTaunHwA) if you need help or want to contribute.
