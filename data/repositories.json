@@ -28,5 +28,11 @@
     "name": "aoc-2024",
     "crate": null,
     "toolchain": "stable"
+  },
+  {
+    "owner": "Artemis21",
+    "name": "aoc24",
+    "crate": null,
+    "toolchain": "stable"
   }
 ]
