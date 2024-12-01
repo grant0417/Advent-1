@@ -46,5 +46,11 @@
     "name": "iamspeed",
     "crate": null,
     "toolchain": "nightly-2024-11-30"
+  },
+  {
+    "owner": "jacobgnewman",
+    "name": "aoc-rust24",
+    "crate": null,
+    "toolchain": "stable"
   }
 ]
