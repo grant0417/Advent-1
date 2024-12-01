@@ -63,6 +63,6 @@
     "owner": "grant0417",
     "name": "advent",
     "crate": null,
-    "toolchain": "stable"
+    "toolchain": "nightly-2024-11-30"
   }
 ]
