@@ -40,5 +40,11 @@
     "name": "advent",
     "crate": "year2024",
     "toolchain": "nightly"
+  },
+  {
+    "owner": "MDFL64",
+    "name": "iamspeed",
+    "crate": null,
+    "toolchain": "nightly-2024-11-30"
   }
 ]
